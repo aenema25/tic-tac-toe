@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+    <body>
+        <div class="title">
+            Tic-Tac-Toe
+        </div>
+        <div id="playMode">
+            <div> How do you wanna play ?</div>
+            <div>
+                <button onclick="gameFunction.hide(this.id)" id="playMode">2 players</button>
+                <button onclick="gameFunction.hide(this.id)" id="playComputer">Against Computer</button>
+            </div>
+        </div>
+        <div id="playerNames" style="display:none">
+            <div>
+                player one name = <input type="text" id="playerOne">
+                player two name = <input type="text" id="playerTwo">
+            </div>
+            <button onclick="gameFunction.hide(this.id)" id="playerNames">Submit</button>
+        </div>
+        <div id="soloGame" style="display:none">
+            <div>
+                Enter your name = <input type="text" id="solo">
+            </div>
+            <button onclick="gameFunction.hide(this.id)" id="soloGame">Submit</button>
+        </div>
+        <div class="container" style="display:none">
+            <div class="tictactoeBody"> 
+                <div class ="spot" id="0"></div>
+                <div class ="spot" id="1"></div>
+                <div class ="spot" id="2"></div>
+                <div class ="spot" id="3"></div>
+                <div class ="spot" id="4"></div>
+                <div class ="spot" id="5"></div>
+                <div class ="spot" id="6"></div>
+                <div class ="spot" id="7"></div>
+                <div class ="spot" id="8"></div>
+            </div>
+            <div>
+                <button onClick="restart()">Restart?</button>
+            </div>
+            
+        </div>
+        <div class="scoreboard" style="display:none">
+            Scoreboard
+            <div id="playerone"></div>
+            <div id="playertwo"></div> 
+        </div>
+        
+        <script src="js/function.js"></script>
+    </body>
+</html>
