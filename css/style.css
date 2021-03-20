@@ -1,0 +1,61 @@
+.title{
+    text-align: center;
+    font-size:40px;
+    padding-bottom: 70px;
+}
+#playMode, #playerNames, #soloGame {
+    text-align: center;
+}
+.container{
+    float:left;
+    margin-left: 20%;
+}
+.tictactoeBody{
+    display: inline-grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+.scoreboard{
+    width:300px;
+    height: 100px;
+    text-align: center;
+    float:right;
+    margin-right:20%;
+    border-style: solid;
+    padding-top: 20px;
+}
+.spot{
+    width:100px;
+    height:100px;
+    border-style: solid;
+    text-align: center;
+    font-size: 80px;
+}
+.spot:first-child{
+    border-left-color: white;
+    border-top-color: white;
+}
+.spot:nth-child(2){
+    border-top-color: white;
+}
+.spot:nth-child(3){
+    border-top-color: white;
+    border-right-color: white;
+}
+.spot:nth-child(4){
+    border-left-color: white;
+}
+.spot:nth-child(6){
+    border-right-color: white;
+}
+.spot:nth-child(7){
+    border-left-color: white;
+    border-bottom-color:white;
+}
+.spot:nth-child(8){
+    border-bottom-color:white;
+}
+.spot:nth-child(9){
+    border-right-color: white;
+    border-bottom-color:white;
+}
